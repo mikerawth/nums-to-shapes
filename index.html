@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Redcon1 Tech Assessment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Instructions</h2>
+    <ol>
+      <li>Sort an array of integers in ascending order</li>
+      <li>Integer divisible by 2 is a square</li>
+      <li>Integer divisible by 3 is a circle</li>
+      <li>Integer divisable by 2 & 3 is a triangle</li>
+      <li>Integer is even, shape should be red</li>
+      <li>Integer is odd, shape should be green</li>
+    </ol>
+
+    <h2>Conclusion</h2>
+    <ul>
+      <li>Sort integers using the array.sort() method</li>
+      <li>
+        Stating that an integer is divisible by 2 & 3 means that it is divisble
+        by 6
+      </li>
+      <li>
+        To produce the correct result, check to see that an integer is divisble
+        by 6 before checking an integer is divisble by 2
+        <br />
+        Checking to see that an integer is divisble by 2 first means that the
+        function will never check for an integer divisble by 6
+      </li>
+      <li>All integers divisible by 2 & 6 will be even and thus red</li>
+      <li>All integers divisble by 3, but not 6, will be odd and thus green</li>
+      <li>
+        Also need to include a shape that is not divisible by 2,3 or 6. This
+        includes numbers divisible by 5, 7 and other prime numbers (11, 13,
+        etc.).
+        <br />
+        Since a number divisible by 2 will always be even, numbers that are not
+        included in the above criteria will always be odd.
+      </li>
+    </ul>
+
+    <div id="content">
+      <div class="array-display"></div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script src="javascript.js"></script>
+</html>
