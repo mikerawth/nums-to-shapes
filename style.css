@@ -1,3 +1,23 @@
 .array-display {
   display: flex;
 }
+
+.triangle::after {
+  content: " ▲";
+  color: red;
+}
+
+.square::after {
+  content: " ◼";
+  color: red;
+}
+
+.circle::after {
+  content: " ●";
+  color: green;
+}
+
+.star::after {
+  content: " ★";
+  color: green;
+}
